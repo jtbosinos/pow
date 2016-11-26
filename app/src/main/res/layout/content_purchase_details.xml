@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:padding="30dip"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:id="@+id/purchasedetails_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="100dp" />
+
+            <TextView
+                android:id="@+id/purchasedetails_merchantname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/purchasedetails_title"
+                android:hint="Merchant Name"
+                android:inputType="textCapWords"
+                android:maxLength="20"
+                android:text=""
+                android:textSize="24sp" />
+
+
+            <EditText
+                android:id="@+id/purchasedetails_amount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/purchasedetails_merchantname"
+                android:hint="Purchase Amount"
+                android:inputType="numberDecimal"
+                android:maxLength="12"
+                android:textSize="22sp"
+                android:gravity="right"/>
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:src="@drawable/credit_card"
+                android:maxHeight="80dip"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="0dip"
+                android:layout_below="@+id/purchasedetails_amount"/>
+
+            <TextView
+                android:id="@+id/paymentlabel"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/icon"
+                android:layout_toEndOf="@+id/icon"
+                android:ellipsize="marquee"
+                android:gravity="bottom"
+                android:singleLine="false"
+                android:layout_marginTop="198dp" />
+
+            <Button
+                android:id="@+id/purchasedetails_submit"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:layout_below="@+id/icon"
+                android:text="Next"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/icon_change"
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:src="@drawable/options"
+                android:maxHeight="24dip"
+                android:scaleType="fitXY"
+                android:layout_alignBottom="@+id/paymentlabel"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+</RelativeLayout>

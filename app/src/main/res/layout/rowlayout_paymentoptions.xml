@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowinfo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:src="@drawable/credit_card"
+        android:maxHeight="80dip"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="0dip" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/icon"
+        android:ellipsize="marquee"
+        android:gravity="bottom"
+        android:singleLine="false" />
+
+
+    <RadioButton
+        android:text=""
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:id="@+id/radioButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
